@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal de Serviços</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>PORTAL DE SERVIÇOS</h1>
+        <div class="btn-container">
+            <button>INÍCIO</button>
+            <button>ENTRAR</button>
+        </div>
+    </header>
+    <main>
+        <nav>
+            <input type="text" placeholder="Pesquisar serviço...">
+            <select name="category" id="category">
+                <option value=""disabled selected hidden>Categorias</option>
+                <option value="1">Categoria 1</option>
+                <option value="2">Categoria 2</option>
+            </select>
+            <select name="stars" id="stars">
+                <option value="" disabled selected hidden>Avaliação</option>
+                <option value="1">1 estrela</option>
+                <option value="2">2 estrelas</option>
+                <option value="3">3 estrelas</option>
+                <option value="4">4 estrelas</option>
+                <option value="5">5 estrelas</option>
+            </select>
+            <button id="btn-add">+</button>
+        </nav>
+        <div class="service-container">
+            <div class="card">
+                <img src="" alt="">
+                <h2>Nome do Serviço</h2>
+                <h3>Categoria: Exemplo</h3>
+                <h4>Nome</h4>
+                <div class="info-card-container">
+                    <span>avaliação</span>
+                    <button class="ver-mais">+ VER MAIS</button>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
