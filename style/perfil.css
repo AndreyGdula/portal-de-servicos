@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+:root {
+    --primary-color: #001a53;
+    --secundary-color: #bac5f3;
+    --background-color: #485599;
+    --shadow-color: #00000085;
+    --btn-color-red: #fc5856;
+    --font-color-red: #3d0b0e;
+    --post-btn-color: #38b6ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr {
+    color: var(--secundary-color);
+    margin: 5px 0px;
+}
+
+div.perfil-container, div.portfolio-container {
+    margin: 30px auto;
+    width: 80%;
+    max-width: 700px;
+}
+
+div.frame-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+div.infos-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    margin: 10px 0px;
+}
+
+h3.perfil-frame {
+    display: flex;
+    align-items: center;
+    background-color: var(--secundary-color);
+    color: var(--primary-color);
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid var(--primary-color);
+    font-size: medium;
+    height: 40px;
+}
+
+h3#username {
+    width: 65%;
+    height: 40px;
+}
+
+h3#phone {
+    width: 35%;
+    height: 40px;
+}
+
+h3#email {
+    width: 60%;
+    height: 40px;
+}
+
+button#delete-account-btn {
+    background-color: var(--btn-color-red);
+    color: var(--font-color-red);
+    border: 2px solid var(--primary-color);
+    width: 40%;
+    margin: 0px;
+    height: 40px;
+
+    @media (max-width: 562px) {
+        font-size: 10px;
+    }
+}
+
+div.title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+button.title-btn {
+    background-color: var(--post-btn-color);
+    border: 2px solid var(--primary-color);
+}
+
+div.portfolio-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0px;
+}
+
+div.card {
+  width: 340px;
+}
+
+div.btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button.edit-card-btn {
+    background-color: var(--post-btn-color);
+    border: 2px solid var(--primary-color);
+}
+
+button.delete-card-btn {
+    background-color: var(--btn-color-red);
+    color: var(--font-color-red);
+    border: 2px solid var(--primary-color);
+}

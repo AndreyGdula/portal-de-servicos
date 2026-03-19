@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+:root {
+    --primary-color: #001a53;
+    --secundary-color: #bac5f3;
+    --background-color: #485599;
+    --shadow-color: #00000085;
+    --btn-color-green: #00bf62;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+div.login-card {
+    background-color: var(--primary-color);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px var(--shadow-color);
+    width: 80%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0 20px 0px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+}
+
+button#login-btn {
+    background-color: var(--btn-color-green);
+    box-shadow: 0px 10px 20px var(--shadow-color);
+    margin: 20px 0px;
+}
+
+p.register-link {
+    color: white;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+a.register-link {
+    color: var(--btn-color-green);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+h2 {
+    font-weight: thin;
+    font-size: medium;
+}

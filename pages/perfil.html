@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Serviços</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/perfil.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&" />
+</head>
+<body>
+    <header>
+        <div class="title-wrapper">
+            <span class="material-symbols-outlined" id="logo-icon">next_week</span>
+            <h1 id="title-h1">PORTAL DE SERVIÇOS</h1>
+        </div>
+        <div class="btn-container">
+            <button onclick="window.location.href='../index.html'">
+                <span class="material-symbols-outlined">home</span>
+                INÍCIO
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="perfil-container">
+            <div class="title-wrapper">
+                <h2>
+                    <span class="material-symbols-outlined">person</span>
+                    MEU PERFIL
+                </h2>
+                <button class="title-btn">
+                    <span class="material-symbols-outlined">logout</span>
+                    SAIR
+                </button>
+            </div>
+            <hr>
+            <div class="frames-container">
+                <div class="infos-wrapper">
+                    <h3 class="perfil-frame" id="username">NOME DE USUÁRIO</h3>
+                    <h3 class="perfil-frame" id="phone">TELEFONE</h3>
+                </div>
+                <div class="infos-wrapper">
+                    <h3 class="perfil-frame" id="email">E-MAIL</h3>
+                    <button id="delete-account-btn">EXCLUIR CONTA</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-container">
+            <div class="title-wrapper">
+                <h2>
+                    <span class="material-symbols-outlined">folder</span>
+                    MEU PORTFÓLIO
+                </h2>
+                <button class="title-btn">PUBLICAR</button>
+            </div>
+            <hr>
+            <div class="portfolio-card">
+                <div class="card">
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/emerson.jpg" alt="Emerson Royal">
+                    </div>
+                    <h2>Finjo que sou jogador</h2>
+                    <h3>Categoria: Recreação</h3>
+                    <div class="btn-wrapper">
+                        <button class="delete-card-btn">
+                            <span class="material-symbols-outlined">delete</span>
+                        </button>
+                        <button class="edit-card-btn">
+                            <span class="material-symbols-outlined">edit</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/desenho.webp" alt="Desenho">
+                    </div>
+                    <h2>Arte Digital</h2>
+                    <h3>Categoria: Design</h3>
+                    <div class="btn-wrapper">
+                        <button class="delete-card-btn">
+                            <span class="material-symbols-outlined">delete</span>
+                        </button>
+                        <button class="edit-card-btn">
+                            <span class="material-symbols-outlined">edit</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/vegeta.webp" alt="Trabalhador">
+                    </div>
+                    <h2>Ajudo em obra</h2>
+                    <h3>Categoria: Serviços Gerais</h3>
+                    <div class="btn-wrapper">
+                        <button class="delete-card-btn">
+                            <span class="material-symbols-outlined">delete</span>
+                        </button>
+                        <button class="edit-card-btn">
+                            <span class="material-symbols-outlined">edit</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

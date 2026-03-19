@@ -14,11 +14,12 @@
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+    align-items: center;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
 }
 
 body {
@@ -207,6 +208,7 @@ div.card {
     background-color: var(--primary-color);
     padding: 20px;
     border-radius: 20px;
+    box-shadow: 10px 10px 20px var(--shadow-color);
 }
 
 div.card-img-container {
@@ -214,7 +216,6 @@ div.card-img-container {
     height: 200px;
     overflow: hidden;
     border-radius: 20px;
-    aspect-ratio: 1 / 1;
     margin-bottom: 10px;
 }
 
