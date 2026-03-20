@@ -5,6 +5,7 @@
     --secundary-color: #bac5f3;
     --background-color: #485599;
     --shadow-color: #00000085;
+    --btn-color-green: #00bf62;
     --btn-color-red: #fc5856;
     --font-color-red: #3d0b0e;
     --post-btn-color: #38b6ff;
@@ -14,11 +15,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-hr {
-    color: var(--secundary-color);
-    margin: 5px 0px;
 }
 
 div.perfil-container, div.portfolio-container {
@@ -50,7 +46,7 @@ h3.perfil-frame {
     align-items: center;
     background-color: var(--secundary-color);
     color: var(--primary-color);
-    padding: 5px;
+    padding: 10px;
     border-radius: 20px;
     border: 2px solid var(--primary-color);
     font-size: medium;

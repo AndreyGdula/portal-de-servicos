@@ -6,8 +6,10 @@
     --background-color: #485599;
     --shadow-color: #00000085;
     --btn-color-green: #00bf62;
+    --btn-color-red: #fc5856;
+    --font-color-red: #3d0b0e;
+    --post-btn-color: #38b6ff;
 }
-
 * {
     margin: 0;
     padding: 0;
