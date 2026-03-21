@@ -40,18 +40,20 @@
                     </div>
                     <input type="text" name="price" id="price" placeholder="Preço" inputmode="decimal">
                 </div>
-                <input type="text" name="description" id="description" placeholder="Descrição do serviço (200 caracteres)" maxlength="200">
+                <textarea name="description" id="description" placeholder="Descrição do serviço (2000 caracteres)" maxlength="2000"></textarea>
             </div>
-            <div class="attachments-container">
-                <input type="file" name="image-file" id="image-file" accept="image/*">
-                <div class="card-img-container">
-                    <img src="../img/img-preview.svg" alt="Imagem do serviço" id="preview-image">
+            <div class="bottom-container">
+                <div class="attachments-container">
+                    <input type="file" name="image-file" id="image-file" accept="image/*">
+                    <div class="card-img-container">
+                        <img src="../img/img-preview.svg" alt="Imagem do serviço" class="card-img" id="preview-image">
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <button id="cancel-post-btn">CANCELAR</button>
+                    <button id="publish-btn">PUBLICAR</button>
                 </div>
             </div>
-        </div>
-        <div class="btn-container">
-            <button id="cancel-post-btn">CANCELAR</button>
-            <button id="publish-btn">PUBLICAR</button>
         </div>
     </main>
 </body>

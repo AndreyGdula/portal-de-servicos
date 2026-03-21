@@ -9,6 +9,8 @@
     --btn-color-red: #fc5856;
     --font-color-red: #3d0b0e;
     --post-btn-color: #38b6ff;
+
+    --font-primary: Arial, sans-serif;
 }
 
 * {
@@ -17,17 +19,42 @@
     box-sizing: border-box;
 }
 
+@media (min-width: 769px) {
+    div.attachments-container {
+        width: 50%;
+        max-width: 300px;
+    }
+    
+    div.bottom-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: end;
+    }
+
+    div.btn-container {
+        flex-direction: column-reverse;
+        justify-content: end;
+        align-items: end;
+        width: 50%;
+
+        button {
+            width: 85%;
+        }
+    }
+}
+
 main {
     padding: 20px;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 640px;
     width: 80%;
     background-color: var(--primary-color);
     border-radius: 20px;
     box-shadow: 10px 10px 20px var(--shadow-color);
 }
 
-input, select {
+input, select, textarea {
     padding: 5px;
     background-color: var(--secundary-color);
     border: 2px solid var(--primary-color);
@@ -52,7 +79,10 @@ input, select {
 #description {
     width: 100%;
     height: 40vw;
+    max-height: 200px;
     vertical-align: top;
+    padding: 10px;
+    font-family: var(--font-primary);
 }
 
 div.infos-post-container {
@@ -68,8 +98,9 @@ div#select-price-wrapper {
 
 div.btn-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     gap: 10px;
+    height: 50px;
 }
 
 button#cancel-post-btn {
@@ -79,4 +110,26 @@ button#cancel-post-btn {
 
 button#publish-btn {
     background-color: var(--post-btn-color);
+}
+
+.card-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 50%;
+        height: auto;
+    }
+}
+
+div.attachments-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input#image-file {
+    width: 100%;
 }
