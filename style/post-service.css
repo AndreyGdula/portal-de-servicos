@@ -32,7 +32,7 @@
         align-items: end;
     }
 
-    div.btn-container {
+    div.btn-post-container {
         flex-direction: column-reverse;
         justify-content: end;
         align-items: end;
@@ -96,7 +96,7 @@ div#select-price-wrapper {
     justify-content: space-between;
 }
 
-div.btn-container {
+div.btn-post-container {
     display: flex;
     justify-content: space-between;
     gap: 10px;
