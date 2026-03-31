@@ -44,7 +44,7 @@ input {
     color: white;
 }
 
-button#login-btn {
+button#login-btn, button#create-btn {
     background-color: var(--btn-color-green);
     box-shadow: 0px 10px 20px var(--shadow-color);
     margin: 20px 0px;
