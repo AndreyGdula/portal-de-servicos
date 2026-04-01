@@ -182,6 +182,10 @@ button {
     margin: 5px;
 }
 
+button:disabled {
+    opacity: 0.5;
+}
+
 button#btn-add {
     width: 52px;
     height: 52px;

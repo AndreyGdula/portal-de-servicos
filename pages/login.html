@@ -25,13 +25,14 @@
     <main>
         <div class="login-card">
             <h2>Insira seu e-mail:</h2>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" required>
             <h2>Insira sua senha:</h2>
-            <input type="password" name="password" id="password">
-            <button id="login-btn">ENTRAR</button>
+            <input type="password" name="password" id="password" required>
+            <button id="login-btn" disabled>ENTRAR</button>
             <p class="register-link">Não tem uma conta? <a href="register.html" class="register-link">Cadastre-se</a></p>
         </div>
     </main>
     <script src="../scripts/script.js"></script>
+    <script src="../scripts/login.js"></script>
 </body>
 </html>
