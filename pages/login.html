@@ -27,7 +27,10 @@
             <h2>Insira seu e-mail:</h2>
             <input type="email" name="email" id="email" required>
             <h2>Insira sua senha:</h2>
-            <input type="password" name="password" id="password" required>
+            <div class="password-wrapper">
+                <input type="password" name="password" id="password" required>
+                <span class="material-symbols-outlined" id="toggle-password" aria-label="Mostrar senha">visibility</span>
+            </div>
             <button id="login-btn" disabled>ENTRAR</button>
             <p class="register-link">Não tem uma conta? <a href="register.html" class="register-link">Cadastre-se</a></p>
         </div>

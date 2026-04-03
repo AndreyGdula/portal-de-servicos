@@ -18,13 +18,15 @@ inputs.forEach(input => {
 btnCreateForm.addEventListener('click', () => {
     const email = emailInput.value
     const password = passwordInput.value
+    const confirmPassword = confirmPasswordInput.value
+
     if (emailInput.validity.typeMismatch) {
         alert('Por favor, insira um email válido.')
         return
     } else if (password.length < 8) {
         alert('A senha deve conter pelo menos 8 caracteres. Por favor, escolha uma senha mais forte.')
         return
-    } else if (passwordInput.value != confirmPasswordInput.value) {
+    } else if (password != confirmPassword) {
         alert('As senhas não coincidem. Por favor, verifique e tente novamente.')
         return
     } else {
