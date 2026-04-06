@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Serviço</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../img/favicon.svg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+
+<header>
+    <div class="title-wrapper">
+        <span class="material-symbols-outlined" id="logo-icon">next_week</span>
+        <h1 id="title-h1">PORTAL DE SERVIÇOS</h1>
+    </div>
+
+    <div class="btn-container">
+        <button onclick="voltar()">
+            <span class="material-symbols-outlined">arrow_back</span>
+            VOLTAR
+        </button>
+    </div>
+</header>
+
+<main>
+
+    <div class="detalhes-container">
+
+        <div class="detalhes-left">
+            <div class="card-img-container">
+                <img id="imagem" class="card-img" alt="Imagem ilustrativa do serviço">
+            </div>
+
+            <div class="detalhes-textos">
+                <h2 id="titulo"></h2>
+                <h3 id="categoria"></h3>
+                <h4 id="nome"></h4>
+            </div>
+
+            <div class="stars-box">
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+            </div>
+        </div>
+
+        <div class="detalhes-right">
+            <div class="info-box" id="preco">Preço</div>
+            <div class="info-box" id="telefone">Telefone</div>
+            <div class="info-box" id="email">E-mail</div>
+            <div class="descricao-box" id="descricao">Descrição do serviço</div>
+        </div>
+
+    </div>
+
+</main>
+
+<script>
+const dados = JSON.parse(localStorage.getItem('dadosCard'))
+
+if (dados) {
+    document.getElementById('titulo').innerText = dados.titulo
+    document.getElementById('categoria').innerText = dados.categoria
+    document.getElementById('nome').innerText = dados.nome
+    document.getElementById('imagem').src = dados.imagem
+}
+
+function voltar() {
+    window.history.back()
+}
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        voltar()
+    }
+})
+</script>
+
+</body>
+</html>

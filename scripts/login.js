@@ -5,7 +5,7 @@ const togglePassword = document.querySelector('#toggle-password')
 const btnLogin = document.querySelector('#login-btn')
 
 function loginRedirect() {
-    window.location.href = '/pages/perfil.html'
+    window.location.href = 'perfil.html'
 }
 
 document.addEventListener('keydown', (event) => {

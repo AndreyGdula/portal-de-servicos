@@ -25,36 +25,44 @@
         <nav>
             <div class="search-wrapper">
                 <span class="material-symbols-outlined">search</span>
-                <input class="search-input" type="text" placeholder="Pesquisar serviço...">
+                <input class="search-input" id="search-input" type="text" placeholder="Pesquisar serviço...">
             </div>
+
             <div class="filter-container">
                 <div class="select-wrapper">
-                    <select name="category" id="category">
-                        <option value=""disabled selected hidden>Categorias</option>
-                        <option value="1">Categoria 1</option>
-                        <option value="2">Categoria 2</option>
+                    <select name="categoria" id="categoria">
+                        <option value="" selected>Categorias</option>
+                        <option value="Design">Design</option>
+                        <option value="Serviços Gerais">Serviços Gerais</option>
+                        <option value="Fotografia">Fotografia</option>
                     </select>
                 </div>
+
                 <div class="select-wrapper">
-                    <select name="stars" id="stars">
-                        <option value="1" selected>★</option>
+                    <select name="estrelas" id="estrelas">
+                        <option value="" selected>Avaliação</option>
+                        <option value="1">★</option>
                         <option value="2">★★</option>
                         <option value="3">★★★</option>
                         <option value="4">★★★★</option>
                         <option value="5">★★★★★</option>
                     </select>
                 </div>
-                <button id="btn-add" style="display: none;"><span class="material-symbols-outlined">Add_2</span></button>
+
+                <button id="btn-add" style="display: none;">
+                    <span class="material-symbols-outlined" onclick="window.location.href='pages/post-service.html'">Add_2</span>
+                </button>
             </div>
         </nav>
+
         <div class="service-container">
             <div class="card">
                 <div class="card-img-container">
                     <img class="card-img" src="img/desenho.jpeg" alt="Desenho anime">
                 </div>
-                <h2>Arte Digital</h2>
-                <h3>Categoria: Design</h3>
-                <h4>Eduardo Henrique</h4>
+                <h2 class="titulo">Arte Digital</h2>
+                <h3 class="categoria">Categoria: Design</h3>
+                <h4 class="nome">Eduardo Henrique</h4>
                 <div class="info-card-container">
                     <div class="stars-box">
                         <span class="material-symbols-outlined">star</span>
@@ -71,9 +79,9 @@
                 <div class="card-img-container">
                     <img class="card-img" src="img/trabalhador.jpeg" alt="Trabalhador">
                 </div>
-                <h2>Ajudo em obra</h2>
-                <h3>Categoria: Serviços Gerais</h3>
-                <h4>Natan</h4>
+                <h2 class="titulo">Ajudo em obra</h2>
+                <h3 class="categoria">Categoria: Serviços Gerais</h3>
+                <h4 class="nome">Natan</h4>
                 <div class="info-card-container">
                     <div class="stars-box">
                         <span class="material-symbols-outlined">star</span>
@@ -90,11 +98,12 @@
                 <div class="card-img-container">
                     <img class="card-img" src="img/foto-casamento.jpeg" alt="Emerson Moura">
                 </div>
-                <h2>Fotógrafo</h2>
-                <h3>Categoria: Fotografia</h3>
-                <h4>Emerson Moura</h4>
+                <h2 class="titulo">Fotógrafo</h2>
+                <h3 class="categoria">Categoria: Fotografia</h3>
+                <h4 class="nome">Emerson Moura</h4>
                 <div class="info-card-container">
                     <div class="stars-box">
+                        <span class="material-symbols-outlined">star</span>
                         <span class="material-symbols-outlined">star</span>
                         <span class="material-symbols-outlined">star</span>
                         <span class="material-symbols-outlined">star</span>
